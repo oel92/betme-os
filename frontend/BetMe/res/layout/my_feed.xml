@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:gravity="center|top"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="top" >
+
+        <Button
+            android:id="@+id/angry_btn2"
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:background="@drawable/buttonshape1"
+            android:gravity="left|center_vertical"
+            android:shadowColor="#A8A2A1"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="    +            Start a new bet"
+            android:onClick="bet"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.44"
+        android:background="@color/gray" >
+
+        <LinearLayout
+            android:layout_width="333dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:gravity="top"
+            android:orientation="vertical" >
+		<LinearLayout
+		    android:id="@+id/invitedLayout"
+		    android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            
+            android:gravity="top"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/invitedTo"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/invited"
+                android:gravity="left|center"
+                android:minHeight="25dp"
+                android:paddingLeft="10dp"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="Invited To"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            </LinearLayout>
+			<LinearLayout
+			    android:id="@+id/activeLayout"
+		    android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            
+            android:gravity="top"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/activeTab"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/active"
+                android:gravity="left|center"
+                android:minHeight="25dp"
+                android:paddingLeft="10dp"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="Active"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/finishedLayout"
+		    android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            
+            android:gravity="top"
+            android:orientation="vertical" >
+
+             <Button
+                 android:id="@+id/finishedTab"
+                 android:layout_width="match_parent"
+                 android:layout_height="23dp"
+                 android:layout_marginTop="10dp"
+                 android:background="@drawable/finished"
+                 android:gravity="left|center"
+                 android:minHeight="25dp"
+                 android:paddingLeft="10dp"
+                 android:shadowColor="#A8A8A8"
+                 android:shadowDx="0"
+                 android:shadowDy="0"
+                 android:shadowRadius="5"
+                 android:text="Finished"
+                 android:textColor="#FFFFFF"
+                 android:textSize="15sp"
+                 android:textStyle="bold" />
+			</LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginBottom="0dp"
+    android:background="#1F1F1F"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    android:paddingBottom="8dp"
+    android:paddingLeft="5dp"
+    android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/myfeed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab"
+           
+            android:text="My Feed"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/friendsfeed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab"
+            android:text="Friends&apos; Feed"
+             android:onClick="friendsFeed"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</LinearLayout>

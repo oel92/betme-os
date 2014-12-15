@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray" >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_marginBottom="0dp"
+       android:layout_y="470dp"
+       android:background="#1F1F1F"
+       android:gravity="bottom"
+       android:orientation="horizontal"
+       android:paddingBottom="8dp"
+       android:paddingLeft="5dp"
+       android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/myfeed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab"
+            android:onClick="myFeed"
+            android:text="My Feed"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/friendsfeed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab"
+            android:text="Friends&apos; Feed"
+             android:onClick="friendsFeed"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_x="215dp"
+        android:layout_y="418dp"
+        android:background="@drawable/cancel"
+        android:gravity="center"
+        android:minHeight="25dp"
+        android:onClick="decline"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Decline"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="183dp"
+        android:layout_y="91dp"
+        android:text="vs"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/challenger_pic"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:layout_x="46dp"
+        android:layout_y="66dp"
+        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+    <ImageView
+        android:id="@+id/opponent_pic"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:layout_x="251dp"
+        android:layout_y="66dp"
+        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+    <TextView
+        android:id="@+id/Opponent"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_x="231dp"
+        android:layout_y="25dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="Opponent"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#D45339"
+        android:textColorHint="#D45339"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/challenger"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_x="29dp"
+        android:layout_y="25dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="Challenger"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#1FB529"
+        android:textColorHint="#1FB529"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <AbsoluteLayout
+        android:id="@+id/gameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="-1dp"
+        android:layout_y="172dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <Button
+            android:id="@+id/gameBox"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_x="0dp"
+            android:layout_y="30dp"
+            android:background="@drawable/betbox"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="4"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/game_tab"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_x="0dp"
+            android:layout_y="7dp"
+            android:background="@drawable/active"
+            android:gravity="left|center"
+            android:minHeight="25dp"
+            android:paddingLeft="10dp"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="Game"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/team1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_x="40dp"
+            android:layout_y="38dp"
+            android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+        <ImageView
+            android:id="@+id/team2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_x="140dp"
+            android:layout_y="38dp"
+            android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="105dp"
+            android:layout_y="50dp"
+            android:text="vs"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="250dp"
+            android:layout_y="55dp"
+            android:hint="Date"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/team1Name"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_x="24dp"
+            android:layout_y="85dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Team1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/team2Name"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_x="123dp"
+            android:layout_y="85dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Team2"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+    </AbsoluteLayout>
+
+    <AbsoluteLayout
+        android:id="@+id/termsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="-1dp"
+        android:layout_y="273dp"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <Button
+            android:id="@+id/terms_tab"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_x="0dp"
+            android:layout_y="20dp"
+            android:background="@drawable/invited"
+            android:gravity="left|center"
+            android:minHeight="25dp"
+            android:paddingLeft="10dp"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="Terms"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/terms_box"
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="8.80"
+            android:layout_x="0dp"
+            android:layout_y="42dp"
+            android:background="@drawable/betbox"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="4"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/terms"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_x="17dp"
+            android:layout_y="50dp"
+            android:hint="Terms" />
+    </AbsoluteLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_x="35dp"
+        android:layout_y="418dp"
+        android:background="@drawable/buttonshape1"
+        android:gravity="center"
+        android:minHeight="25dp"
+        android:onClick="accept"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Accept"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</AbsoluteLayout>

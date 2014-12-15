@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <LinearLayout android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent" android:layout_height="45dip"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#FAF7F7" 
+        >
+        <ImageView android:id="@+id/ImageView01" android:src="@drawable/ic_launcher"
+                android:layout_height="40dip" android:layout_width="40dip" android:layout_marginLeft="40dip"></ImageView>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView android:id="@+id/tvGroup" android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:text="Groups"               
+                android:textColor="#000000"
+                android:textSize="17dip"></TextView>
+</LinearLayout> -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dip"
+     android:background="#FAF7F7"  >
+
+    <TextView android:id="@+id/tvGroupName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="John Smith" 
+        android:textSize="18dip"/>
+    <TextView android:id="@+id/tvGroupName2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="23 Years old"
+        android:textSize="18dip" />
+
+    <TextView
+        android:id="@+id/textViewPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="phone:9292304336"
+        android:textSize="18dip" />
+
+     <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewPhone"
+                android:orientation="horizontal"
+                android:layout_marginRight="30dip"
+                android:layout_marginBottom="10dip"  
+                android:gravity="right">
+             <Button
+            android:id="@+id/addCasePersonAddressBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"       
+            android:layout_marginRight="5dip"
+           android:text="Edit"
+             android:layout_gravity="center_vertical"             
+            android:textSize="18dip" />   
+            <Button
+            android:id="@+id/casePersonEdtBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add address"
+            android:layout_marginLeft="10dip"      
+            android:visibility="visible"
+            android:layout_gravity="center_vertical"
+           />
+        
+        </LinearLayout> 
+
+</LinearLayout> 
+
+
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dip"        
+        android:paddingTop="5dip"
+    android:background="#FAF7F7"  >
+   
+
+       <RelativeLayout android:id="@+id/casePersonLinearLayout"
+                   android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                          
+                >
+                
+           
+        <RelativeLayout android:id="@+id/casePersonManImageLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+         >   
+        <ImageView
+                android:id="@+id/casePersonManImage"
+                android:layout_width="16dip"
+                android:layout_height="16dip"                                                 
+                android:layout_marginLeft="10dip"                
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher"                
+               />
+        <TextView
+            android:id="@+id/casePersonFrstLastNameTxtViw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"            
+            android:layout_toRightOf="@+id/casePersonManImage"
+            android:text="John Smith"
+            android:textColor="#000000"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+        </RelativeLayout>
+        
+
+        <RelativeLayout android:id="@+id/casePersonRelationshipLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+        android:layout_marginBottom="10dip"
+        android:layout_below="@+id/casePersonManImageLayout"
+         >
+        <ImageView
+                android:id="@+id/casePersonRelationshipImage"
+                android:layout_width="16dip"
+                android:layout_height="16dip"                                                 
+                android:layout_marginLeft="10dip"                
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher"                
+               />
+        <TextView
+            android:id="@+id/relationshipTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"            
+            android:layout_marginRight="10dip"           
+            android:layout_toRightOf="@+id/casePersonRelationshipImage"            
+            android:text="23 years old"
+            android:textSize="13dip"
+            android:textColor="#000000" />
+        </RelativeLayout>
+        
+        
+
+        <TextView
+            android:id="@+id/DOBTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_below="@+id/casePersonRelationshipLayout"
+            android:text=" phnone-9292304336"
+            android:layout_marginBottom="10dip"  
+            android:textColor="#000000" 
+            android:textSize="13dip" />
+        
+        
+
+       <TextView
+            android:id="@+id/mobilePhTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:layout_below="@+id/DOBTxtView"
+            android:layout_marginLeft="10dip"
+            android:text="phone-9292929922"
+            android:textColor="#000000" 
+            android:textSize="12dip" /> 
+        
+        </RelativeLayout>
+        
+        
+       <LinearLayout android:id="@+id/linearGroupLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/casePersonLinearLayout"
+                android:orientation="horizontal"
+                android:layout_marginRight="30dip"
+                android:layout_marginBottom="10dip"  
+                android:gravity="right">
+             <Button
+            android:id="@+id/addCasePersonAddressBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"       
+            android:layout_marginRight="5dip"
+            android:text="Edit"
+             android:layout_gravity="center_vertical"             
+            android:textSize="18dip" />   
+            <Button
+            android:id="@+id/casePersonEdtBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"             
+            android:layout_marginLeft="10dip"  
+            android:text="Add Address"     
+            android:layout_gravity="center_vertical"
+           />
+        
+        </LinearLayout>       
+
+</RelativeLayout> -->

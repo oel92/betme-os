@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     android:background="#FAF7F7"
+      >
+<RelativeLayout android:id="@+id/casePersonLinearLayout"
+                   android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="60dip"             
+                >
+    <TextView android:id="@+id/tvPlayerName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#00FFFF"
+        android:text="player" />
+    <TextView
+    android:id="@+id/textViewAddres1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Address1"
+    android:layout_below="@+id/tvPlayerName"
+    android:textColor="#00FFFF" />
+    <TextView
+    android:id="@+id/textViewAddres2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Address2"
+    android:layout_below="@+id/textViewAddres1"
+    android:textColor="#00FFFF" />
+    <TextView
+    android:id="@+id/textViewPhnonee"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ph:9292304336"
+    android:layout_below="@+id/textViewAddres2"
+    android:textColor="#00FFFF" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewPhnonee"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="33dp"
+        android:text="Edit" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

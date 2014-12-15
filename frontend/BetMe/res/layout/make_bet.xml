@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:largeHeap="true"
+    android:orientation="vertical" >
+
+<Button
+    android:id="@+id/invitedTo"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/invited"
+    android:gravity="left|center"
+    android:minHeight="25dp"
+    android:paddingLeft="10dp"
+    android:shadowColor="#A8A8A8"
+    android:shadowDx="0"
+    android:shadowDy="0"
+    android:shadowRadius="5"
+    android:text="Make a bet"
+    android:textColor="#FFFFFF"
+    android:textSize="15sp"
+    android:textStyle="bold" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="420dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/white"
+    tools:context=".MakeBet" >
+
+    <ExpandableListView
+        android:id="@+id/pick_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+		
+    </ExpandableListView>
+
+     <ExpandableListView
+         android:id="@+id/pick_league"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/pick_friend"
+         android:background="@color/white" >
+       
+		
+    </ExpandableListView>
+
+
+     <!--   <LinearLayout
+           android:id="@+id/teams"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/pick_league"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:background="@color/white"
+           android:orientation="vertical" >
+
+    <ExpandableListView
+        android:id="@+id/nfl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pick_league"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white" >
+		
+    </ExpandableListView>
+
+    <ExpandableListView
+        android:id="@+id/nba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nfl"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white" >
+		
+    </ExpandableListView>
+
+    <ExpandableListView
+        android:id="@+id/mlb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nba"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white" >
+		
+    </ExpandableListView>
+     </LinearLayout>
+      -->
+
+       <ExpandableListView
+           android:id="@+id/league_teams"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/pick_league"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:background="@color/white" >
+		
+    </ExpandableListView>
+      
+    <ExpandableListView
+        android:id="@+id/pick_terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/league_teams"
+        android:background="@color/white" >
+		
+    </ExpandableListView>
+
+    <ExpandableListView
+        android:id="@+id/pick_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pick_terms"
+        android:background="@color/white" >
+		
+    </ExpandableListView>
+</RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/gray"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp" >
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="170dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonshape1"
+        android:gravity="center"
+        android:minHeight="25dp"
+        android:onClick="addBet"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+<Button
+    android:id="@+id/cancel"
+    android:layout_width="170dp"
+    android:layout_height="fill_parent"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/cancel"
+    android:gravity="center"
+    android:minHeight="25dp"
+    android:onClick="cancel"
+    android:shadowColor="#A8A8A8"
+    android:shadowDx="0"
+    android:shadowDy="0"
+    android:shadowRadius="5"
+    android:text="Cancel"
+    android:textColor="#FFFFFF"
+    android:textSize="15sp"
+    android:textStyle="bold" />
+
+</LinearLayout>
+</LinearLayout>
